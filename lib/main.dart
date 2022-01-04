@@ -4,7 +4,7 @@ import 'package:seminar_project/routes/home.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/',
+    initialRoute: '/', // Simple routing
     routes: {
       '/' : (context) => Loading(),
       '/home' : (context) => Home(),

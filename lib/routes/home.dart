@@ -4,6 +4,9 @@ import 'package:seminar_project/classes/weather_info_row.dart';
 import 'package:weather_icons/weather_icons.dart';
 import 'package:seminar_project/classes/weathercodes.dart';
 
+/// Main Widget for Displaying data about weather
+///
+/// Displays the latitude/longitude of a location with a 7-day forecast
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -14,6 +17,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   Map data = {};
 
+  // Creates the Widgets for the 7-day forecast
   List<Widget> createWeatherRows() {
     List<int> weatherCodes = data['weatherInfo'].weathercodes;
     List<DateTime> days = data['weatherInfo'].days;
