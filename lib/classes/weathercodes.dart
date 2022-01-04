@@ -1,5 +1,8 @@
 import 'package:weather_icons/weather_icons.dart';
 
+/// Static class for mapping weathercodes to their description and icon
+///
+/// Weathercodes are all from Open-Meteo API,
 class WeatherCodes {
   static Map codes = {
     0: {
